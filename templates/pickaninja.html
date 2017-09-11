@@ -1,0 +1,16 @@
+
+
+
+
+
+{% if color=="purple" %}
+  <img color="purple" src="{{ url_for('static', filename='donatello.jpg') }}">
+{% elif color=="red" %}
+<img color="red" src="{{ url_for('static', filename='raphael.jpg') }}">
+{% elif color=="orange" %}
+<img color="orange" src="{{ url_for('static', filename='michelangelo.jpg') }}">
+{% elif color=="blue" %}
+<img color="blue" src="{{ url_for('static', filename='leonardo.jpg') }}">
+{% else %}
+<img src="{{ url_for('static', filename='notapril.jpg') }}">
+{% endif %}
